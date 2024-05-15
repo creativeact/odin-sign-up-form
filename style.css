@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#logo-container {
+    border: 2px solid green;
+    width: 40%;
+    height: 100%;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    width: 60%;
+    height: auto;
+}
+
+#description-container {
+    height: 200px;
+}
+
+#form-container {
+    border: 2px solid red;
+    height: 200px;
+}
+
+#account-container {
+    height: 200px;
+}
