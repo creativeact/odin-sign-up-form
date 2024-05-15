@@ -1,32 +1,84 @@
+:root {
+    font-family: Vollkorn, Arial, Helvetica, sans-serif;
+}
+
 body {
+    margin: 0;
+}
+
+#main {
     display: flex;
     flex-direction: row;
     margin: 0;
 }
 
-#logo-container {
-    border: 2px solid green;
-    width: 40%;
-    height: 100%;
+#left {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    max-width: 40%;
+    align-items: center;
+    justify-content: center;
 }
 
-#content-container {
+#background-image {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#logo-container {
+    position: absolute;
+    padding: 20px 20px;
     display: flex;
+    flex-wrap: wrap;
+    max-height: 35vh;
+    width: 100%;
+    top: 5vh;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: gray;
+    opacity: 0.82;
+    z-index: 2;
+}
+
+#logo-container p {
+    color: white;
+    font-size: 4rem;
+    margin-right: 20px;
+}
+
+#odin-logo {
+    max-height: 30vh;
+    width: auto;
+}
+
+#right {
+    display: flex;
+    flex: 1;
     flex-direction: column;
-    border: 2px solid blue;
-    width: 60%;
-    height: auto;
+    justify-content: space-between;
 }
 
 #description-container {
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
 }
 
 #form-container {
-    border: 2px solid red;
-    height: 200px;
+    height: 35vh;
+    padding: 20px 20px;
+    box-shadow: 5px 5px 5px gray;
+    background-color: lightgray;
 }
 
 #account-container {
-    height: 200px;
+    display: flex;
+    align-items: center;
+    height: 25vh;
 }
+
