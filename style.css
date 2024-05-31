@@ -2,8 +2,9 @@
     font-family: Vollkorn, Arial, Helvetica, sans-serif;
 }
 
-body {
-    margin: 0;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 #main {
@@ -12,27 +13,26 @@ body {
     height: 100vh;
 }
 
-#background-image {
-    height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
 #left {
     position: relative;
     display: flex;
     width: 40vw;
 }
 
+#background-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
 #logo-container {
     position: absolute;
     padding: 20px 20px;
     display: flex;
-    flex-wrap: wrap;
-    max-height: 75%;
     width: 100%;
-    top: 5vh;
+    top: 40vh;
     align-items: center;
     justify-content: space-around;
     box-sizing: border-box;
@@ -41,41 +41,67 @@ body {
     z-index: 2;
 }
 
-#odin-logo {
-    max-height: 20vh;
-    max-width: 20vh;
-}
-
 #logo-container p {
     color: white;
     font-size: 4rem;
-    margin-right: 20px;
+    margin: 0px 20px 0px 0px;
+}
+
+#odin-logo {
+    max-height: 20vh;
+    max-width: 20vh;
 }
 
 #right {
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: space-between;
+    z-index: 3;
+    width: 60vw;
 }
 
-#description-container {
+#text-container {
+    display: block;
+    font-size: 1.5rem;
+    padding: 20px 20px;
+    margin-top: 10vh;
+}
+
+#text-container p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 40vh;
-}
-
-#form-container {
-    height: 35vh;
+    flex-wrap: wrap;
     padding: 20px 20px;
     box-shadow: 5px 5px 5px gray;
     background-color: lightgray;
+    min-height: 200px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
 }
 
 #account-container {
-    display: flex;
+    display: block;
     align-items: center;
-    height: 25vh;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 10vh;
 }
 
