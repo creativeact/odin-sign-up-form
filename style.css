@@ -58,13 +58,14 @@
     flex-direction: column;
     z-index: 3;
     width: 60vw;
+    margin-bottom: 20px;
 }
 
 #text-container {
     display: block;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.75rem);
     padding: 20px 20px;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 #text-container p {
@@ -75,17 +76,19 @@
 form {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     padding: 20px 20px;
     box-shadow: 5px 5px 5px gray;
     background-color: lightgray;
-    min-height: 200px;
 }
 
 .form-item {
     display: flex;
-    flex-direction: column;
-    width: 200px;
-    padding: 20px 20px;
+    flex-flow: column;
+    width: 40%;
+    padding: 10px 10px;
 }
 
 label {
@@ -95,13 +98,51 @@ label {
 input {
     width: 100%;
     padding: 10px;
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    border: 1px solid lightsalmon;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 5px 5px 5px darkgray;
+}
+
+input:invalid:focus {
+    border: 2px solid red;
 }
 
 #account-container {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    margin-bottom: 10vh;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+button {
+    background-color: lightsalmon;
+    border-radius: 25px;
+    border: 1px solid darkgray;
+    color: white;
+    font-family: inherit;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    font-size: 100%;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+button:hover {
+    background-color: rgb(215, 131, 98);
+}
+
+span {
+    color: rgb(215, 131, 98);
+}
+
+span:hover {
+    cursor: pointer;
 }
 
