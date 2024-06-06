@@ -29,43 +29,36 @@
                 <p>You <em>know</em> you want to.</p>
             </div>
 
-                <form>
+                <form id="sign-up">
                     <div class="form-item">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" required>
+                        <input type="text" type="submit" id="first-name" name="first-name" required>
                     </div>
-                
                     <div class="form-item">
                         <label for="last-name">Last Name</label>
                         <input type="text" id="last-name" name="last-name" required>
                     </div>
-        
                     <div class="form-item">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-            
                     <div class="form-item">
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone" required>
                     </div>
-            
                     <div class="form-item">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" required>
                     </div>
-            
                     <div class="form-item">
                         <label for="password">Confirm Password</label>
                         <input type="password" id="password" name="password" required>
                     </div>
                 </form>
         
-            <div id="signup-container">
-                <button type="submit">CREATE ACCOUNT</button>
-
+            <div id="login-container">
+                <button type="submit" form="sign-up">CREATE ACCOUNT</button>
                 <p>Already have an account? <span>Log In</span></p>
-
             </div>
         </div>
     </div>

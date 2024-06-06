@@ -1,7 +1,5 @@
 :root {
     font-family: Vollkorn, Arial, Helvetica, sans-serif;
-    --signup-container-height: 25vh;
-    --text-container-height: 20vh;
 }
 
 * {
@@ -118,7 +116,11 @@ input:invalid:focus {
     border: 2px solid red;
 }
 
-#signup-container {
+input:valid {
+    border: 2px solid green;
+}
+
+#login-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
